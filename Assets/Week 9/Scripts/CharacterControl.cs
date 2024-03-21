@@ -26,7 +26,7 @@ public class CharacterControl : MonoBehaviour
         }
         SelectedVillager = villager;
         SelectedVillager.Selected(true);
-        instance.typeText.GetComponent<TextMeshProUGUI>().text = SelectedVillager.CanOpen().ToString();
+        instance.typeText.GetComponent<TextMeshProUGUI>().text = villager.ToString();
             
     }
     
