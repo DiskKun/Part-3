@@ -5,8 +5,9 @@ using UnityEngine;
 public class Fork : Item
 {
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         price = 10;
     }
 
@@ -14,6 +15,6 @@ public class Fork : Item
     {
         base.OnMouseEnter();
         itemText.text = "This is a fork! Its price is $" + price + ".";
-
+       
     }
 }

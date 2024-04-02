@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Apple : Item
 {
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         price = 5;
     }
 
